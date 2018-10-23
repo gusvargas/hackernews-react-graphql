@@ -28,28 +28,22 @@ module.exports = {
       '/show': { page: '/show' },
       '/submit': { page: '/submit' },
       '/threads': { page: '/threads' },
-
-      //     '/p/975': { page: '/post', query: { id: '975' } },
-      //     '/p/481': { page: '/post', query: { id: '481' } },
     };
   },
-  // webpack: (config, { dev }) => {
-  //   // Perform customizations to webpack config
-  //   if (!dev) {
-  //     config.module.rules.push({
-  //       test: /\.(css|ico|gif)$/,
-  //       use: [
-  //         {
-  //           loader: 'file-loader',
-  //           options: {
-  //             outputPath: 'static/',
-  //           },
-  //         },
-  //       ],
-  //     });
-  //   }
+  webpack: (config, { dev }) => {
+    // config.module.rules.push({
+    //   test: /\.(js|css)$/,
+    //   use: [
+    //     {
+    //       loader: 'cache-loader',
+    //       query: {
+    //         cacheDirectory: './.cache',
+    //       },
+    //     },
+    //   ],
+    // });
 
-  //   // Important: return the modified config
-  //   return config;
-  // },
+    // Important: return the modified config
+    return config;
+  },
 };

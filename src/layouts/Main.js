@@ -7,7 +7,6 @@ import Header from '../components/presentational/Header';
 import Footer from '../components/presentational/Footer';
 import meQuery from '../data/queries/meQuery';
 
-
 const Main = props => (
   <center>
     <Head>
